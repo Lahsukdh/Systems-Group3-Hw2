@@ -62,8 +62,9 @@ EXPECTEDOUTPUTS = $(ALLTESTS:.spl=.out)
 # or just add to TESTS above
 STUDENTTESTOUTPUTS = $(ALLTESTS:.spl=.myo)
 
-# rule for compiling individual .c files
-%.o: %.c %.h
+# You might need a separate rule like this for your main program
+# since there is no .h file for the main file, usually.
+$(LEXER)_main.o: $(LEXER)_main.c
 	$(CC) $(CFLAGS) -c $<
 
 .PHONY: clean
