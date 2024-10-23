@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 int main(int agrc,char * agrv[]){
-FILE * fileLEX;
-fileLEX = fopen(agrv[1],"r");
+    
+char * fileLEX;
+fileLEX = agrv[1];
 lexer_init(fileLEX);
 lexer_output(fileLEX);
 }
