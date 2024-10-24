@@ -88,41 +88,41 @@ static void number2ast(unsigned int val)
  
 
 
+
 identsym {tok2ast(identsym); return identsym; }
 numbersym {tok2ast(numbersym); return numbersym;}
-plussym {tok2ast(plussym); return plussym;}
-minussym {tok2ast(minussym); return minussym;}
-multsym {tok2ast(multsym); return multsym;}
-divsym {tok2ast(divsym); return divsym;}
-periodsym {tok2ast(periodsym); return periodsym;}
-semisym {tok2ast(semisym); return semisym;}
-eqsym {tok2ast(eqsym); return eqsym;}
-commasym {tok2ast(commasym); return commasym;}
-becomessym {tok2ast(becomessym); return becomessym;}
-periodsym {tok2ast(periodsym); return periodsym;}
-lparensym {tok2ast(lparensym); return lparensym;}
-rparensym {tok2ast(rparensym); return rparensym;}
-constsym {tok2ast(constsym); return constsym;}
-varsym {tok2ast(varsym); return varsym;}
-procsym {tok2ast(procsym); return procsym;}
-callsym {tok2ast(callsym); return callsym;}
-beginsym {tok2ast(beginsym); return beginsym;}
-endsym {tok2ast(endsym); return endsym;}
-ifsym {tok2ast(ifsym); return ifsym;}
-thensym {tok2ast(thensym); return thensym;}
-elsesym {tok2ast(elsesym); return elsesym;}
-whilesym {tok2ast(whilesym); return whilesym;}
-dosym {tok2ast(dosym); return dosym;}
-readsym {tok2ast(readsym); return readsym;}
-printsym {tok2ast(printsym); return printsym;}
-divisiblesym {tok2ast(divisiblesym); return divisiblesym;}
-bysym {tok2ast(bysym); return bysym;}
-eqeqsym {tok2ast(eqeqsym); return eqeqsym;}
-neqsym {tok2ast(neqsym); return neqsym;}
-ltsym {tok2ast(ltsym); return ltsym;}
-leqsym {tok2ast(leqsym); return leqsym;}
-gtsym {tok2ast(gtsym); return gtsym;}
-geqsym {tok2ast(geqsym); return geqsym;}
+"+" {tok2ast(plussym); return plussym;}
+"-"  {tok2ast(minussym); return minussym;}
+"*"  {tok2ast(multsym); return multsym;}
+"/" {tok2ast(divsym); return divsym;}
+"." {tok2ast(periodsym); return periodsym;}
+";" {tok2ast(semisym); return semisym;}
+"=" {tok2ast(eqsym); return eqsym;}
+"," {tok2ast(commasym); return commasym;}
+":=" {tok2ast(becomessym); return becomessym;}
+"("  {tok2ast(lparensym); return lparensym;}
+")" {tok2ast(rparensym); return rparensym;}
+"const" {tok2ast(constsym); return constsym;}
+"var" {tok2ast(varsym); return varsym;}
+"proc" {tok2ast(procsym); return procsym;}
+"call" {tok2ast(callsym); return callsym;}
+"begin" {tok2ast(beginsym); return beginsym;}
+"end" {tok2ast(endsym); return endsym;}
+"if"  {tok2ast(ifsym); return ifsym;}
+"then" {tok2ast(thensym); return thensym;}
+"else"  {tok2ast(elsesym); return elsesym;}
+"while" {tok2ast(whilesym); return whilesym;}
+"do" {tok2ast(dosym); return dosym;}
+"read"  {tok2ast(readsym); return readsym;}
+"print"  {tok2ast(printsym); return printsym;}
+"divisible" {tok2ast(divisiblesym); return divisiblesym;}
+"by" {tok2ast(bysym); return bysym;}
+"==" {tok2ast(eqeqsym); return eqeqsym;}
+"!=" {tok2ast(neqsym); return neqsym;}
+"<" {tok2ast(ltsym); return ltsym;}
+"<=" {tok2ast(leqsym); return leqsym;}
+">" {tok2ast(gtsym); return gtsym;}
+">=" {tok2ast(geqsym); return geqsym;}
 
 
 
