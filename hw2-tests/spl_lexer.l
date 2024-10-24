@@ -88,9 +88,7 @@ static void number2ast(unsigned int val)
  
 
 
-[_a-zA-Z]+ {tok2ast(identsym); return identsym; }
 
-[0-9]+ {tok2ast(numbersym); return numbersym;}
 
 "+" {tok2ast(plussym); return plussym;}
 "-"  {tok2ast(minussym); return minussym;}
@@ -125,6 +123,9 @@ static void number2ast(unsigned int val)
 ">" {tok2ast(gtsym); return gtsym;}
 ">=" {tok2ast(geqsym); return geqsym;}
 
+[_a-zA-Z]+ {tok2ast(identsym); return identsym; }
+
+[0-9]+ {tok2ast(numbersym); return numbersym;}
 
 
 %.*  /*Ignores the Header*/
