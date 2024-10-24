@@ -85,6 +85,47 @@ static void number2ast(unsigned int val)
 %%
 
  /* fill in the rules for your lexer below! */
+ 
+
+
+identsym {tok2ast(identsym); return identsym; }
+numbersym {tok2ast(numbersym); return numbersym;}
+plussym {tok2ast(plussym); return plussym;}
+minussym {tok2ast(minussym); return minussym;}
+multsym {tok2ast(multsym); return multsym;}
+divsym {tok2ast(divsym); return divsym;}
+periodsym {tok2ast(periodsym); return periodsym;}
+semisym {tok2ast(semisym); return semisym;}
+eqsym {tok2ast(eqsym); return eqsym;}
+commasym {tok2ast(commasym); return commasym;}
+becomessym {tok2ast(becomessym); return becomessym;}
+periodsym {tok2ast(periodsym); return periodsym;}
+lparensym {tok2ast(lparensym); return lparensym;}
+rparensym {tok2ast(rparensym); return rparensym;}
+constsym {tok2ast(constsym); return constsym;}
+varsym {tok2ast(varsym); return varsym;}
+procsym {tok2ast(procsym); return procsym;}
+callsym {tok2ast(callsym); return callsym;}
+beginsym {tok2ast(beginsym); return beginsym;}
+endsym {tok2ast(endsym); return endsym;}
+ifsym {tok2ast(ifsym); return ifsym;}
+thensym {tok2ast(thensym); return thensym;}
+elsesym {tok2ast(elsesym); return elsesym;}
+whilesym {tok2ast(whilesym); return whilesym;}
+dosym {tok2ast(dosym); return dosym;}
+readsym {tok2ast(readsym); return readsym;}
+printsym {tok2ast(printsym); return printsym;}
+divisiblesym {tok2ast(divisiblesym); return divisiblesym;}
+bysym {tok2ast(bysym); return bysym;}
+eqeqsym {tok2ast(eqeqsym); return eqeqsym;}
+neqsym {tok2ast(neqsym); return neqsym;}
+ltsym {tok2ast(ltsym); return ltsym;}
+leqsym {tok2ast(leqsym); return leqsym;}
+gtsym {tok2ast(gtsym); return gtsym;}
+geqsym {tok2ast(geqsym); return geqsym;}
+
+
+
 
 
 
