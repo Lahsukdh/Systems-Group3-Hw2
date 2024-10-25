@@ -123,17 +123,16 @@ static void number2ast(unsigned int val)
 ">" {tok2ast(gtsym); return gtsym;}
 ">=" {tok2ast(geqsym); return geqsym;}
 
-[_a-zA-Z]+ {tok2ast(identsym); return identsym; }
+[_a-zA-Z][_a-zA-Z0-9]* {tok2ast(identsym); return identsym; }
 
 [0-9]+ {tok2ast(numbersym); return numbersym;}
 
 
 
 
-
  
 
-\n  { yylineno; }
+\n  {yylineno;} /*Counts all the lines*/
 
 %%
 
