@@ -90,7 +90,7 @@ static void number2ast(unsigned int val)
 %.*  /*Ignores the Header*/
 
 
-"+" {tok2ast(plussym); return plussym;}
+"+"  {tok2ast(plussym); return plussym;}
 "-"  {tok2ast(minussym); return minussym;}
 "*"  {tok2ast(multsym); return multsym;}
 "/" {tok2ast(divsym); return divsym;}
