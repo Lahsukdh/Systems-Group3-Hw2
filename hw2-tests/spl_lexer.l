@@ -87,7 +87,7 @@ static void number2ast(unsigned int val)
  /* fill in the rules for your lexer below! */
  
 
-
+%.*  /*Ignores the Header*/
 
 
 "+" {tok2ast(plussym); return plussym;}
@@ -128,12 +128,12 @@ static void number2ast(unsigned int val)
 [0-9]+ {tok2ast(numbersym); return numbersym;}
 
 
-%.*  /*Ignores the Header*/
+
 
 
  
 
-
+\n  { yylineno; }
 
 %%
 
